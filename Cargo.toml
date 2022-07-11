@@ -1,0 +1,15 @@
+[package]
+name = "ad_helper"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.*"
+byteorder = "1.4.*"
+chrono = { version = "0.4.*", features = ["serde"] }
+ldap3 = { version = "0.10.*", features = ["gssapi", "native-tls"] }
+tokio = { version = "1.19.*", features = ["rt-multi-thread"] }
+trust-dns-resolver = "0.21.*"
+itertools = "0.10.*"
